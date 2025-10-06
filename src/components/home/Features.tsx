@@ -24,7 +24,7 @@ export default function Features() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white">Our Features</h2>
             <p className="mt-4 text-sm text-zinc-400">
-              Skill Vendor is evolving into a powerful ecosystem — and we're just getting started. Exciting new features are coming soon, all included in your single subscription:
+              Skill Vendor is evolving into a powerful ecosystem — and we&apos;re just getting started. Exciting new features are coming soon, all included in your single subscription:
             </p>
             <div className="mt-6 space-y-6">
               {items.map((it) => (

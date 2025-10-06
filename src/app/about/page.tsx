@@ -10,7 +10,7 @@ export default function AboutPage() {
           
           <div className="space-y-6 text-base text-zinc-300 leading-relaxed">
             <p>
-              Welcome to <span className="text-white font-semibold">Skill Vendor</span> – India's Most Rewarding Ed Tech Platform. 
+              Welcome to <span className="text-white font-semibold">Skill Vendor</span> – India&apos;s Most Rewarding Ed Tech Platform. 
               We are on a mission to make quality education and valuable resources accessible to everyone through a single, 
               affordable subscription.
             </p>

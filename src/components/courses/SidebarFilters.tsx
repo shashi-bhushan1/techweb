@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { categories, courseTags } from "@/content/courses";
 
 interface SidebarFiltersProps {

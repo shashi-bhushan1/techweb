@@ -1,6 +1,6 @@
 import Section from "@/components/ui/Section";
 import Heading from "@/components/ui/Heading";
-import { Button, LinkButton } from "@/components/ui/Button";
+import { LinkButton } from "@/components/ui/Button";
 import { hero } from "@/content/home";
 import LightRays from "@/components/ui/LightRays";
 

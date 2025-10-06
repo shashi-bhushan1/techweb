@@ -1,13 +1,15 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="border-t border-zinc-900/80 bg-black text-zinc-400">
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
-            <a href="/" className="cursor-target flex items-center gap-2 text-white">
+            <Link href="/" className="cursor-target flex items-center gap-2 text-white">
               <div className="h-7 w-7 rounded-sm bg-fuchsia-600" />
               <span className="text-base font-semibold">Skill Vendor</span>
-            </a>
+            </Link>
             <p className="mt-3 text-sm leading-6 text-zinc-500">
               A one-stop platform offering premium courses, exclusive discounts and AI tools — all with a single subscription.
             </p>

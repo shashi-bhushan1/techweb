@@ -191,14 +191,22 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
           const mouseOffsetX = (mouseX - targetCenterX) * parallaxStrength;
           const mouseOffsetY = (mouseY - targetCenterY) * parallaxStrength;
 
-          tlOffset.x += mouseOffsetX;
-          tlOffset.y += mouseOffsetY;
-          trOffset.x += mouseOffsetX;
-          trOffset.y += mouseOffsetY;
-          brOffset.x += mouseOffsetX;
-          brOffset.y += mouseOffsetY;
-          blOffset.x += mouseOffsetX;
-          blOffset.y += mouseOffsetY;
+          tlOffset = {
+            x: tlOffset.x + mouseOffsetX,
+            y: tlOffset.y + mouseOffsetY
+          };
+          trOffset = {
+            x: trOffset.x + mouseOffsetX,
+            y: trOffset.y + mouseOffsetY
+          };
+          brOffset = {
+            x: brOffset.x + mouseOffsetX,
+            y: brOffset.y + mouseOffsetY
+          };
+          blOffset = {
+            x: blOffset.x + mouseOffsetX,
+            y: blOffset.y + mouseOffsetY
+          };
         }
 
         const tl = gsap.timeline();
