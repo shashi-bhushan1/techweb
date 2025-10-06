@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="text-base font-semibold">Skill Vendor</span>
             </Link>
             <p className="mt-3 text-sm leading-6 text-zinc-500">
-              A one-stop platform offering premium courses, exclusive discounts and AI tools — all with a single subscription.
+              Learning Becomes Easier
             </p>
           </div>
           <div>
@@ -26,7 +26,6 @@ export default function Footer() {
             <h4 className="text-base font-semibold text-white">Social</h4>
             <ul className="mt-3 space-y-2 text-sm">
               <li><a href="#instagram" className="cursor-target hover:text-white transition-colors">Instagram</a></li>
-              <li><a href="#youtube" className="cursor-target hover:text-white transition-colors">Youtube</a></li>
               <li><a href="#linkedin" className="cursor-target hover:text-white transition-colors">LinkedIn</a></li>
               <li><a href="#facebook" className="cursor-target hover:text-white transition-colors">Facebook</a></li>
             </ul>
@@ -34,13 +33,13 @@ export default function Footer() {
           <div>
             <h4 className="text-base font-semibold text-white">Contact Us</h4>
             <ul className="mt-3 space-y-2 text-sm">
-              <li><a href="mailto:support@theskillvendor.com" className="cursor-target hover:text-white transition-colors">support@theskillvendor.com</a></li>
-              <li><a href="https://wa.me/917977948089" className="cursor-target hover:text-white transition-colors">Whatsapp: +91-7977948089</a></li>
+              <li><a href="mailto:support@lernezy.com" className="cursor-target hover:text-white transition-colors">support@lernezy.com</a></li>
+              <li><a href="https://wa.me/919886934430" className="cursor-target hover:text-white transition-colors">Whatsapp: +91-9886934430</a></li>
             </ul>
           </div>
         </div>
         <div className="mt-8 border-t border-zinc-900/80 pt-6 text-sm text-zinc-600">
-          © 2025 All Rights Reserved | Brand of Zenith IND 47 Labs LLP
+          © 2025 All Rights Reserved | Lernezy Private Limited
         </div>
       </div>
     </footer>

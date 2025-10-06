@@ -21,8 +21,24 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    const mailtoLink = `mailto:support@lernezy.com?subject=${subject}&body=${body}`;
+    
+    // Open user's email client
+    window.location.href = mailtoLink;
+    
+    // Reset form after submission
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    });
   };
 
   return (

@@ -13,10 +13,9 @@ const COURSES_PER_PAGE = 6;
 export default function CoursesPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Filter courses based on search term, categories, and tags
+  // Filter courses based on search term and categories
   const filteredCourses = useMemo(() => {
     let filtered = courses;
 
@@ -34,14 +33,8 @@ export default function CoursesPage() {
       );
     }
 
-    // Filter by tags (if any are selected)
-    if (selectedTags.length > 0) {
-      // For now, we'll show all courses if tags are selected since we don't have tag data
-      // You can add tag filtering logic here when you have tag data
-    }
-
     return filtered;
-  }, [searchTerm, selectedCategories, selectedTags]);
+  }, [searchTerm, selectedCategories]);
 
   const totalPages = Math.ceil(filteredCourses.length / COURSES_PER_PAGE);
   
@@ -58,11 +51,6 @@ export default function CoursesPage() {
     setCurrentPage(1); // Reset to first page when filters change
   };
 
-  const handleTagChange = (tags: string[]) => {
-    setSelectedTags(tags);
-    setCurrentPage(1); // Reset to first page when filters change
-  };
-
   return (
     <main className="bg-black text-white min-h-screen">
       <Section className="bg-black text-white" containerClassName="py-8">
@@ -70,9 +58,7 @@ export default function CoursesPage() {
           <div>
             <SidebarFilters 
               selectedCategories={selectedCategories}
-              selectedTags={selectedTags}
               onCategoryChange={handleCategoryChange}
-              onTagChange={handleTagChange}
             />
           </div>
           <div>
