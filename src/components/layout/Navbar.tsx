@@ -1,18 +1,18 @@
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-zinc-900/80 bg-black/70 backdrop-blur supports-[backdrop-filter]:bg-black/50">
-      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
-        <div className="flex items-center gap-2">
-          <div className="h-6 w-6 rounded-sm bg-fuchsia-600" />
-          <span className="text-sm font-semibold text-white">Skill Vendor</span>
-        </div>
-        <nav className="hidden items-center gap-6 text-xs text-zinc-300 sm:flex">
-          <a href="/" className="hover:text-white">Home</a>
-          <a href="/courses" className="hover:text-white">Courses</a>
-          <a href="#about" className="hover:text-white">About</a>
-          <a href="/contact" className="hover:text-white">Contact</a>
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+        <a href="/" className="cursor-target flex items-center gap-2">
+          <div className="h-7 w-7 rounded-sm bg-fuchsia-600" />
+          <span className="text-base font-semibold text-white">Skill Vendor</span>
+        </a>
+        <nav className="hidden items-center gap-6 text-sm text-zinc-300 sm:flex">
+          <a href="/" className="cursor-target hover:text-white transition-colors">Home</a>
+          <a href="/courses" className="cursor-target hover:text-white transition-colors">Courses</a>
+          <a href="/about" className="cursor-target hover:text-white transition-colors">About</a>
+          <a href="/contact" className="cursor-target hover:text-white transition-colors">Contact</a>
         </nav>
-        <a href="#login" className="rounded-md bg-white/10 px-3 py-1.5 text-xs text-white hover:bg-white/20">Login</a>
+        <a href="#login" className="cursor-target rounded-md bg-fuchsia-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-fuchsia-500 transition-colors">Login</a>
       </div>
     </header>
   );

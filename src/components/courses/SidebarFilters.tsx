@@ -45,31 +45,31 @@ export default function SidebarFilters({
           {selectedCategories.length > 0 && (
             <button 
               onClick={clearAllFilters}
-              className="text-xs text-blue-400 hover:text-blue-300"
+              className="cursor-target text-xs text-blue-400 hover:text-blue-300 transition-colors"
             >
               Clear All
             </button>
           )}
         </div>
-        <ul className="mt-3 space-y-2 text-xs text-zinc-300">
-          <li className="flex items-center gap-2">
+        <ul className="mt-4 space-y-3 text-xs text-zinc-300">
+          <li className="flex items-start gap-3">
             <input 
               type="checkbox" 
               checked={selectedCategories.length === 0}
               onChange={() => onCategoryChange([])}
-              className="h-3.5 w-3.5 rounded border-zinc-700 bg-zinc-900" 
+              className="cursor-target h-5 w-5 flex-shrink-0 mt-0.5 rounded border-2 border-zinc-700 bg-zinc-900 text-fuchsia-600 focus:ring-2 focus:ring-fuchsia-600 focus:ring-offset-0 accent-fuchsia-600" 
             />
-            <span className="text-white font-medium">All Categories</span>
+            <span className="text-white font-medium leading-relaxed">All Categories</span>
           </li>
           {categories.map((c) => (
-            <li key={c} className="flex items-center gap-2">
+            <li key={c} className="flex items-start gap-3">
               <input 
                 type="checkbox" 
                 checked={selectedCategories.includes(c)}
                 onChange={() => handleCategoryToggle(c)}
-                className="h-3.5 w-3.5 rounded border-zinc-700 bg-zinc-900" 
+                className="cursor-target h-5 w-5 flex-shrink-0 mt-0.5 rounded border-2 border-zinc-700 bg-zinc-900 text-fuchsia-600 focus:ring-2 focus:ring-fuchsia-600 focus:ring-offset-0 accent-fuchsia-600" 
               />
-              <span className="hover:text-white cursor-pointer" onClick={() => handleCategoryToggle(c)}>
+              <span className="hover:text-white cursor-pointer transition-colors leading-relaxed" onClick={() => handleCategoryToggle(c)}>
                 {c}
               </span>
             </li>
@@ -86,22 +86,22 @@ export default function SidebarFilters({
       </div>
       <div className="pt-4">
         <h3 className="text-sm font-semibold text-white">Course Tag</h3>
-        <ul className="mt-3 space-y-2 text-xs text-zinc-300">
+        <ul className="mt-4 space-y-3 text-xs text-zinc-300">
           {courseTags.map((t) => (
-            <li key={t} className="flex items-center gap-2">
+            <li key={t} className="flex items-start gap-3">
               <input 
                 type="checkbox" 
                 checked={selectedTags.includes(t)}
                 onChange={() => handleTagToggle(t)}
-                className="h-3.5 w-3.5 rounded border-zinc-700 bg-zinc-900" 
+                className="cursor-target h-5 w-5 flex-shrink-0 mt-0.5 rounded border-2 border-zinc-700 bg-zinc-900 text-fuchsia-600 focus:ring-2 focus:ring-fuchsia-600 focus:ring-offset-0 accent-fuchsia-600" 
               />
-              <span className="hover:text-white cursor-pointer" onClick={() => handleTagToggle(t)}>
+              <span className="hover:text-white cursor-pointer transition-colors leading-relaxed" onClick={() => handleTagToggle(t)}>
                 {t}
               </span>
             </li>
           ))}
         </ul>
-        <button className="mt-4 w-full rounded-md border border-zinc-700 px-4 py-2 text-xs text-zinc-200 hover:bg-zinc-900">
+        <button className="cursor-target mt-4 w-full rounded-md border border-zinc-700 px-4 py-2 text-xs text-zinc-200 hover:bg-zinc-900 transition-colors">
           Subscribe Now
         </button>
       </div>

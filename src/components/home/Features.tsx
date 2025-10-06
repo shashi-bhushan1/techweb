@@ -22,7 +22,7 @@ export default function Features() {
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div>
-            <h2 className="text-2xl font-semibold text-white">Our Features</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white">Our Features</h2>
             <p className="mt-4 text-sm text-zinc-400">
               Skill Vendor is evolving into a powerful ecosystem — and we're just getting started. Exciting new features are coming soon, all included in your single subscription:
             </p>

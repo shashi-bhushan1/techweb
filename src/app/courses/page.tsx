@@ -76,16 +76,13 @@ export default function CoursesPage() {
             />
           </div>
           <div>
-            <div className="flex items-center justify-between mb-4">
+            <div className="mb-8">
               <SearchBar value={searchTerm} onChange={setSearchTerm} />
-              <div className="text-sm text-zinc-400">
-                {filteredCourses.length} course{filteredCourses.length !== 1 ? 's' : ''} found
-              </div>
             </div>
             
             {filteredCourses.length > 0 ? (
               <>
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {currentCourses.map((course) => (
                     <CourseCard key={course.id} course={course} />
                   ))}
